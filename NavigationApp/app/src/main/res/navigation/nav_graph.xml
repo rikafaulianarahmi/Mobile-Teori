@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentA">
+
+    <fragment
+        android:id="@+id/fragmentA"
+        android:name="com.example.navigationapp.FragmentA"
+        android:label="Fragment A"
+        tools:layout="@layout/fragment_a">
+        <action
+            android:id="@+id/action_fragmentA_to_fragmentB"
+            app:destination="@id/fragmentB" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentB"
+        android:name="com.example.navigationapp.FragmentB"
+        android:label="Fragment B"
+        tools:layout="@layout/fragment_b">
+        <action
+            android:id="@+id/action_fragmentB_to_fragmentC"
+            app:destination="@id/fragmentC" />
+        <argument
+            android:name="namaUser"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentC"
+        android:name="com.example.navigationapp.FragmentC"
+        android:label="Fragment C"
+        tools:layout="@layout/fragment_c">
+        <action
+            android:id="@+id/action_fragmentC_to_fragmentD"
+            app:destination="@id/fragmentD" />
+        <argument
+            android:name="nomorUrut"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentD"
+        android:name="com.example.navigationapp.FragmentD"
+        android:label="Fragment D"
+        tools:layout="@layout/fragment_d">
+        <action
+            android:id="@+id/action_fragmentD_to_fragmentE"
+            app:destination="@id/fragmentE" />
+        <argument
+            android:name="pesanPenting"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentE"
+        android:name="com.example.navigationapp.FragmentE"
+        android:label="Fragment E"
+        tools:layout="@layout/fragment_e">
+        <action
+            android:id="@+id/action_fragmentE_to_fragmentF"
+            app:destination="@id/fragmentF" />
+        <argument
+            android:name="statusAktif"
+            app:argType="boolean" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentF"
+        android:name="com.example.navigationapp.FragmentF"
+        android:label="Fragment F"
+        tools:layout="@layout/fragment_f">
+        <action
+            android:id="@+id/action_fragmentF_to_fragmentG"
+            app:destination="@id/fragmentG" />
+        <argument
+            android:name="nilaiScore"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentG"
+        android:name="com.example.navigationapp.FragmentG"
+        android:label="Fragment G"
+        tools:layout="@layout/fragment_g">
+        <action
+            android:id="@+id/action_fragmentG_to_fragmentH"
+            app:destination="@id/fragmentH" />
+        <argument
+            android:name="judulHalaman"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentH"
+        android:name="com.example.navigationapp.FragmentH"
+        android:label="Fragment H"
+        tools:layout="@layout/fragment_h">
+        <action
+            android:id="@+id/action_fragmentH_to_fragmentI"
+            app:destination="@id/fragmentI" />
+        <argument
+            android:name="warnaFavorit"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentI"
+        android:name="com.example.navigationapp.FragmentI"
+        android:label="Fragment I"
+        tools:layout="@layout/fragment_i">
+        <action
+            android:id="@+id/action_fragmentI_to_fragmentJ"
+            app:destination="@id/fragmentJ" />
+        <argument
+            android:name="angkaRandom"
+            app:argType="integer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentJ"
+        android:name="com.example.navigationapp.FragmentJ"
+        android:label="Fragment J"
+        tools:layout="@layout/fragment_j">
+        <argument
+            android:name="pesanAkhir"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
